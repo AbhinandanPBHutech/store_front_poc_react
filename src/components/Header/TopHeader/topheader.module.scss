@@ -1,0 +1,22 @@
+@import "../../../commonStyles/colors.module.scss";
+.container {
+  background-color: $theme-clr;
+  position: sticky;
+  z-index: +1000;
+  top: 0;
+
+  .top_header_left_side {
+    .top_header_left_user_name {
+      text-underline-offset: 8px;
+      color: $top-header-text-clr;
+      font-weight: 700;
+    }
+    .top_header_left_user_city {
+      color: $top-header-text-clr;
+    }
+  }
+  .top_header_right_side_text {
+    color: $top-header-text-clr;
+    font-weight: 700;
+  }
+}

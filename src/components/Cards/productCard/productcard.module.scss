@@ -1,0 +1,147 @@
+@import "../../../commonStyles/colors.module.scss";
+.container {
+  width: 90%;
+  margin: 2% auto;
+  :global {
+    .slick-prev:before,
+    .slick-next:before {
+      display: none !important;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      display: none !important;
+    }
+  }
+}
+.top_row {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px 0;
+}
+.card_img {
+  height: 150px;
+  width: 90%;
+  object-fit: contain;
+  margin: auto;
+}
+.top_row_heading {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.top_row_see_all {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $theme-clr;
+  cursor: pointer;
+}
+.card {
+  border: 1px solid #e2e2e2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.3s all;
+  position: relative;
+  .traingle {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    right: 14%;
+    position: absolute;
+    z-index: 1000;
+    transform: rotate(45deg);
+  }
+  .offer_percentage {
+    position: absolute;
+    right: 0;
+    background-color: #fd334e;
+    color: white;
+    padding: 0 5px 0 15px;
+  }
+}
+.card:hover {
+  border: 1px solid $theme-clr;
+  cursor: pointer;
+}
+.card span {
+  width: 60% !important;
+  margin: 9% auto 0 !important;
+  height: 100px !important;
+}
+.card_title {
+  margin-top: 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.card_price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_price_left {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.card_discount_price {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $theme-clr;
+}
+.card_actual_price {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #253d4e;
+  opacity: 0.5;
+}
+.price_off {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3bb77e;
+}
+.product_status {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #fd334e;
+}
+.add_to_card_btn {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $theme-clr;
+  border: 1px solid $theme-clr;
+  background-color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+}

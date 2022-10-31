@@ -1,0 +1,33 @@
+@import "../../../commonStyles/colors.module.scss";
+.container {
+  width: 95%;
+  margin: 2% auto 0;
+  .label1 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .label2 {
+    color: $theme-clr;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  :global {
+    .slick-prev:before,
+    .slick-next:before {
+      color: gray !important;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: gray !important;
+    }
+  }
+}

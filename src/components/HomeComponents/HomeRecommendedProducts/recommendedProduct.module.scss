@@ -1,0 +1,27 @@
+@import "../../../commonStyles/colors.module.scss";
+.container {
+  width: 95%;
+  margin: 2% auto;
+  .top_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    .top_row_left_section {
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .top_row_right_section {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $theme-clr;
+    }
+  }
+}

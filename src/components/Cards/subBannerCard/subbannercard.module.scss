@@ -1,0 +1,62 @@
+@import "../../../commonStyles/colors.module.scss";
+.container {
+  width: 96%;
+  margin: auto;
+  height: 185px;
+  .card_left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    .top_text {
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: -0.01em;
+      text-align: left;
+      width: fit-content;
+      background-color: $black-clr;
+      color: $white-clr;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .secondery_text {
+      font-family: Rounded Mplus 1c Bold;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .tertiary_text {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+      text-align: left;
+      color: #838383;
+    }
+    .action_text {
+      font-family: Quicksand;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      width: fit-content;
+      padding: 5px 10px;
+      background-color: $black-clr;
+      color: $white-clr;
+    }
+  }
+  .card_right {
+    width: 40%;
+    .card_img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

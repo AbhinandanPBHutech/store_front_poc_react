@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +8,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(186, 185, 183); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: aqua; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  /* // border: 3px solid orange;  creates padding around scroll thumb */
 }
 
 code {
